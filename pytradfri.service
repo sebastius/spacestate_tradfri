@@ -1,0 +1,10 @@
+[Unit]
+Description=Pytradfri
+
+[Service]
+ExecStart=/home/pytradfri/spacestate_tradfri_sockets.py 10.42.44.72
+WorkingDirectory=/home/pytradfri
+User=pytradfri
+
+[Install]
+WantedBy=default.target
